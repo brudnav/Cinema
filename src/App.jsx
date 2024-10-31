@@ -1,10 +1,11 @@
-import Home from "./pages/Home/Home"
-
+import { Outlet } from "react-router-dom"
 function App() {
 
   return (
     <>
-      <Home />
+      <nav>Navigace</nav>
+      <Outlet />
+      <footer>@2024</footer>
     </>
   )
 }
