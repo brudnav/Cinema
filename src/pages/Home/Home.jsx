@@ -1,7 +1,10 @@
 import React from 'react'
 import styles from "./Home.module.css"
 import joker from "../../assets/joker.jpg"
+import { useNavigate } from 'react-router-dom'
 const Home = () => {
+
+    const navigate = useNavigate();
     return (
         <>
             <div className={styles.container}>
@@ -20,12 +23,12 @@ const Home = () => {
             </div>
             <h3>Promítáme a předprodej</h3>
             <div className={styles.grid}>
-                <div className='item'></div>
-                <div className='item'></div>
-                <div className='item'></div>
-                <div className='item'></div>
-                <div className='item'></div>
-                <div className='item'></div>
+                <div onClick={() => { navigate("/movie-detail") }} className='item'></div>
+                <div onClick={() => { navigate("/movie-detail") }} className='item'></div>
+                <div onClick={() => { navigate("/movie-detail") }} className='item'></div>
+                <div onClick={() => { navigate("/movie-detail") }} className='item'></div>
+                <div onClick={() => { navigate("/movie-detail") }} className='item'></div>
+                <div onClick={() => { navigate("/movie-detail") }} className='item'></div>
             </div>
         </>
     )
