@@ -9,9 +9,7 @@ const Home = () => {
                 <h1 style={{ marginTop: 20 }}>Joker</h1>
                 <div className={styles.information}>
                     <span>2020</span>
-                    <span> . </span>
                     <span>Crime, Drama, Thriller</span>
-                    <span> . </span>
                     <span>Dolby Digital</span>
                 </div>
             </div>
